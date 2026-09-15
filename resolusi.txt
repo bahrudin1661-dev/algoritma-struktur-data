@@ -1,0 +1,5 @@
+resolusi tahun ini :
+    belajar coding (python) setiap hari dalam rentang waktu 15-30 menit sehari
+    belajar fundamental DBMS (database manajemen sistem) 
+    menguasai statistika dasar
+    sering sering membuat projek dibanding belajar teori

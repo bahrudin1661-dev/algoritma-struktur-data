@@ -1,3 +1,14 @@
+print("===pencatatan zakat fitrah====")
+nama_donatur = str(input("masukkan nama : "))
+jumlah_jiwa = int(input("masukkan jumlah anggota yang di tanggung : "))
+harga_beras_per_kg = float(input("masukkam harga beras per-kg : "))
+total_berat_beras = jumlah_jiwa * 2.5
+total_biaya = total_berat_beras * harga_beras_per_kg
+print("Nama Donatur     : ", nama_donatur)
+print("Jumlah Tanggungan: ", jumlah_jiwa, " jiwa")
+print("Kewajiban Beras  : ", total_berat_beras, " kg")
+print("Estimasi Nilai Uang : Rp", total_biaya)
+
 # =============analisis model IPO (masukkan, proses, keluaran)=============
 
 # =====Input======
@@ -41,35 +52,3 @@
 #    Tampilkan("Jumlah Tanggungan: ", jumlah_jiwa, " jiwa")
 #    Tampilkan("Kewajiban Beras  : ", total_berat_beras, " kg")
 #    Tampilkan("Estimasi Nilai Uang : Rp", total_biaya)
-
-
-
-import json #import modul
-donatur_zakat = []
-with open("donatur.json", "w") as file:
-    json.dump(donatur_zakat, file)
-
-
-print("===pencatatan zakat fitrah====")
-nama_donatur = str(input("masukkan nama : "))
-jumlah_jiwa = int(input("masukkan jumlah anggota yang di tanggung : "))
-harga_beras_per_kg = float(input("masukkam harga beras per-kg : "))
-total_berat_beras = jumlah_jiwa * 2.5
-total_biaya = total_berat_beras * harga_beras_per_kg
-print("Nama Donatur     : ", nama_donatur)
-print("Jumlah Tanggungan: ", jumlah_jiwa, " jiwa")
-print("Kewajiban Beras  : ", total_berat_beras, " kg")
-print("Estimasi Nilai Uang : Rp", total_biaya)
-
-donatur = [
-    {
-        "donatur": nama_donatur,
-        "jumlah_tanggungan": jumlah_jiwa,
-        "kewajiban beras": total_berat_beras,
-        "estimasi nilai uang": total_biaya
-    }
-]
-
-
-with open("donatur.json", "w") as file:
-    json.dump(donatur, file)

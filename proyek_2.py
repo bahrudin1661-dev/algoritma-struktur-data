@@ -1,7 +1,7 @@
 # tugas mandiri penggunaan if, elif, else
 
 print("=================kalkulator dasar=================")
-print("pilih mode operasi :\nperjumlahan = 1\npengurangan = 2\nperkalian = 3\npembagian = 4")
+print("pilih mode operasi :\n1 = perjumlahan\n2 = pengurangan\n3 = perkalian\n4 = pembagian")
 mode_operasi = int(input("masukkan pilihan : "))
 angka_pertama = float(input("masukkan angka pertama : "))
 angka_kedua = float(input("masukkan angka kedua : "))
@@ -17,3 +17,4 @@ elif mode_operasi == 4:
 else:
     print("pilihan tidak tersedia")
 
+print("jawaban operasi adalah : ", jawaban)

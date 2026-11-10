@@ -16,5 +16,5 @@ elif mode_operasi == 4:
     jawaban = angka_pertama / angka_kedua
 else:
     print("pilihan tidak tersedia")
-
+    
 print("jawaban operasi adalah : ", jawaban)

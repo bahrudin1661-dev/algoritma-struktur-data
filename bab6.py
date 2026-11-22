@@ -9,7 +9,14 @@ while tunggakan > 0:
     tunggakan -= pembayaran_per_bulan
 
 # tugas ke ketiga
-
+urutan_buku = 0
 jumlah_buku = int(input("masukkan jumlah buku : "))
+total_denda = 0
 for i in range(jumlah_buku):
-    print("hi")
+    urutan_buku += 1
+    hari_terlambat = int(input(f"buku ke-{urutan_buku}, masukkan berapa hari terlambat : "))
+    if hari_terlambat == 0:
+        continue
+    denda = float(hari_terlambat * 1000)
+    total_denda += denda
+print(f"{total_denda:,.2f}")
